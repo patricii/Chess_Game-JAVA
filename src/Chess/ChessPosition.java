@@ -11,9 +11,9 @@ public class ChessPosition {
 	}
 
 	public ChessPosition(char column, int row) {
-		if(column < 'A' || column > 'H' || row < 1 || row > 8)
+		if(column < 'a' || column > 'h' || row < 1 || row > 8)
 		{
-			throw new ChessException("Error to instace Chess Position, valid position from A1 to H8");
+			throw new ChessException("Error to instace Chess Position, valid position from a1 to h8");
 		}
 		this.column = column;
 		this.row = row;
